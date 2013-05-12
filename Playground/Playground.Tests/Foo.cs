@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Playground.Classes;
 using Playground.Interfaces;
+using System.Dynamic;
 
 namespace Playground.Tests
 {
@@ -34,9 +35,12 @@ namespace Playground.Tests
             csvClass.Address = "stuff 123";
             csvClass.ZipCode = "22222";
 
+            dynamic props = new ExpandoObject();
+            
             var properties = csvClass.GetType().GetProperties().ToDictionary(x => x.Name, x => x.GetValue(csvClass, null));
             foreach (var prop in properties)
             {
+               
                 values.Add(prop.Value.ToString());
             }
             Assert.AreEqual(values.Count, 3);

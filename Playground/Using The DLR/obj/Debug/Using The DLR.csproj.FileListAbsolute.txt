@@ -1,0 +1,5 @@
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\Using The DLR\bin\Debug\Using The DLR.exe.config
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\Using The DLR\bin\Debug\Using The DLR.exe
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\Using The DLR\bin\Debug\Using The DLR.pdb
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\Using The DLR\obj\Debug\Using The DLR.exe
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\Using The DLR\obj\Debug\Using The DLR.pdb

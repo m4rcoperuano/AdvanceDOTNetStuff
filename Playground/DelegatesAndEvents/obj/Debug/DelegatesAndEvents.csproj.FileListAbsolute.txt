@@ -1,0 +1,6 @@
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe.config
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.pdb
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.csprojResolveAssemblyReference.cache
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.exe
+C:\Users\MarcoLedesma\Github\AdvanceDOTNetStuff\Playground\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.pdb
