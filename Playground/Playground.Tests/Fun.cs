@@ -11,7 +11,7 @@ using System.Dynamic;
 namespace Playground.Tests
 {
     [TestClass]
-    public class CarStuff
+    public class Fun
     {
         [TestMethod]
         public void Operations()
@@ -30,26 +30,34 @@ namespace Playground.Tests
             //take a class full of properties
             MyCSVClass csvClass = new MyCSVClass();
             List<string> values = new List<string>();
+
             //break it into a dictionary object
-            csvClass.Name = "hello World";
+            csvClass.Name = " hello World ";
             csvClass.Address = "stuff 123";
             csvClass.ZipCode = "22222";
+            MyModification removeSpaces = new MyModification(x=>x.Trim());
+            string result = csvClass.ExecuteModification(x=>x.Trim());
+
 
             dynamic props = new ExpandoObject();
-            
-            var properties = csvClass.GetType().GetProperties().ToDictionary(x => x.Name, x => x.GetValue(csvClass, null));
-            foreach (var prop in properties)
-            {
-               
-                values.Add(prop.Value.ToString());
-            }
-            Assert.AreEqual(values.Count, 3);
+
+            values = csvClass.GetType()
+                .GetProperties().
+                ToDictionary(x => x.Name, x => x.GetValue(csvClass, null))
+                .Select(x=> x.Value.ToString()).ToList<string>();
+
+
+            Assert.AreEqual(result, "hello World");
         }
 
         //helper methods
         public double GetTheModifiedSpeed(IVehicles vehicle)
         {
             return vehicle.GetSpeed() + 70;
+        }
+        public string removeSpaces(string input)
+        {
+            return input.Trim();
         }
     }
 }

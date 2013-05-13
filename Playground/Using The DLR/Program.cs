@@ -15,11 +15,11 @@ namespace Using_The_DLR
             dynamic obj = GetASpeaker();
             dynamic expando = new ExpandoObject(); //dictionary string, object
             expando.Name = "Marco Ledesma";
-            expando.Speak = new Action(() => Console.WriteLine(expando.Name));
+            expando.Speak = new Action(() => Console.WriteLine(expando.Name)); //you can store anything in it!
             
             //expando.Speak();
 
-            foreach (var member in expando)
+            foreach (var member in expando) //show its members (since this is a string -> object dictionary)
             {
                 Console.WriteLine(member.Key);
             }
